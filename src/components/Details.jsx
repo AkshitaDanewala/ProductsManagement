@@ -1,9 +1,8 @@
-import React from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
-
+import { Link, useNavigate, useParams } from 'react-router-dom'
 const Details = () => {
 
-    const {title} = useParams()
+  
+   const {title} = useParams()
     const navigate = useNavigate()
 
     const backhandler = ()=>{
@@ -12,7 +11,16 @@ const Details = () => {
   return (
     <div>
 
-<h3>{title}</h3>
+<h3>{title}
+<Link to="/ KajariyaCompany">About Company</Link>
+
+
+
+
+</h3>
+
+
+
 <button onClick={ backhandler}>Back</button>
 
     </div>
