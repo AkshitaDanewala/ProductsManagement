@@ -5,7 +5,7 @@ export const ProductContext = createContext()
 
 const Context = (props) => {
 
-const [allProducts, setallProducts] = useState([])
+const [allProducts, setallProducts] = useState(JSON.parse(localStorage.getItem("Productslist")) || [])
   return (
     <div>
 
