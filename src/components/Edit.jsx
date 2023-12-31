@@ -6,11 +6,11 @@ const Edit = () => {
 const [allProducts, setallProducts] = useContext(ProductContext)
 
 const navigate = useNavigate()
-const {index} = useParams()
- const productsIndex = allProducts.findIndex((p)=> p.index == index)
+const {title} = useParams()
+ const productsIndex = allProducts.findIndex((p)=> p.number == title)
 
 const [editProductsData, seteditProductsData] = useState({
-    
+  number: allProducts[productsIndex].number,
 product: allProducts[productsIndex].product,
 size:  allProducts[productsIndex].size,
 quantity: allProducts[productsIndex].quantity,
@@ -28,17 +28,16 @@ const editHandler = (e)=>{
 const submithandler = (event)=>{
 event.preventDefault()
 
-const productsData = {product: editProductsData.product, size: editProductsData.size, quantity: editProductsData.quantity, stock: editProductsData.stock, companyName: editProductsData.companyName}
+const productsData = { number: editProductsData.number, product: editProductsData.product, size: editProductsData.size, quantity: editProductsData.quantity, stock: editProductsData.stock, companyName: editProductsData.companyName}
 
 const Copyproducts = [...allProducts]
 Copyproducts[ productsIndex] = productsData
 setallProducts(Copyproducts )
 localStorage.setItem("Productslist", JSON.stringify(Copyproducts ))
 
-
-navigate("/Details")
-
+navigate("/Show")
 };
+
 
   return (
 
@@ -46,11 +45,19 @@ navigate("/Details")
     <div>
         <form onSubmit={submithandler} >
 
+        <input  type="number"
+onChange={editHandler } 
+value={editProductsData.number}
+name="number" 
+placeholder='S.No' /> <br /> <br />  
+
+
+
 <input  type="text"
 onChange={editHandler } 
 value={editProductsData.product}
 name="product" 
-placeholder='ProductName' /> <br /> <br />
+placeholder='Product' /> <br /> <br />
 
 <input type="text" 
 onChange={editHandler }

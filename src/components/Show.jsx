@@ -25,18 +25,18 @@ const Show = () => {
 
       <div className="links">
 
-        <Link to={`/Show/Details/${p.product},
+        <Link to={`/Show/Details/ ${p.number},
+        ${p.product},
         ${p.size},
         ${p.quantity},
         ${p.stock},
-        ${p.companyName}`
-    }>Details </Link>
+        ${p.companyName}`}>Details </Link>
 
       <span onClick={()=> deleteProducts(index) }>
         <i className="ri-delete-bin-line" ></i>
         </span>
 
-      <Link to={`/Show/Edit/${index}`}>
+      <Link to={`/Show/Edit/${p.number}`}>
         <i className="ri-file-edit-line"></i>
         </Link>
       </div>

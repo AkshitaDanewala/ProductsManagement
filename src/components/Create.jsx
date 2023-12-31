@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const Create = () => {
 const [allProducts, setallProducts] = useContext(ProductContext)
 const navigate = useNavigate()
+const [number, setnumber] = useState("")
 const [product, setproduct] = useState("")
 const [size, setsize] = useState("")
 const [quantity, setquantity] = useState("")
@@ -14,13 +15,14 @@ const [companyName, setcompanyName] = useState("")
 const submithandler = (event)=>{
 event.preventDefault()
 
-const productsData = {product, size, quantity, stock, companyName}
+const productsData = { number, product, size, quantity, stock, companyName}
 
 const Copyproducts = [...allProducts]
 Copyproducts.push(productsData)
 setallProducts(Copyproducts )
 localStorage.setItem("Productslist", JSON.stringify(Copyproducts ))
 
+setnumber("")
 setproduct("")
 setsize("")
 setquantity("")
@@ -37,6 +39,12 @@ navigate("/Show")
     <>
     <div>
         <form onSubmit={submithandler} >
+
+<input type="number" 
+onChange={(e)=> setnumber(e.target.value) } 
+value={number}
+name="number" 
+placeholder='S.No' /> <br /> <br />
 
 <input  type="text"
 onChange={(e)=> setproduct(e.target.value) } 
