@@ -14,6 +14,7 @@ import 'remixicon/fonts/remixicon.css'
 const App = () => {
   return (
     <>
+  
     <Nav/>
     <Routes>
 
@@ -23,7 +24,7 @@ const App = () => {
 <Route path="/Create" element={<Create/>}/>
 <Route path="/Show" element={<Show/>}/>
 <Route path="/Show/Details/:title" element={<Details/>}/>
-<Route path="/Show/Edit/:title" element={<Edit/>}/>
+<Route path="/Show/Edit/:title/" element={<Edit/>}/>
 <Route path="/ KajariyaCompany" element={< KajariyaCompany/>}/>
 
 

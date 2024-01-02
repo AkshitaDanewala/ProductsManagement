@@ -10,6 +10,7 @@ const {title} = useParams()
  const productsIndex = allProducts.findIndex((p)=> p.number == title)
 
 const [editProductsData, seteditProductsData] = useState({
+  
   number: allProducts[productsIndex].number,
 product: allProducts[productsIndex].product,
 size:  allProducts[productsIndex].size,

@@ -14,9 +14,6 @@ const Details = () => {
 <h3>{title}
 <Link to="/ KajariyaCompany">About Company</Link>
 
-
-
-
 </h3>
 
 

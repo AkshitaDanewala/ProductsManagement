@@ -37,7 +37,9 @@ navigate("/Show")
   return (
 
     <>
-    <div>
+    <div className=' h-screen w-full bg-red-300'>
+
+
         <form onSubmit={submithandler} >
 
 <input type="number" 
