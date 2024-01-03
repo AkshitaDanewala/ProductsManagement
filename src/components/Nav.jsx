@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 const Nav = () => {
   return (
-<nav className='h-14 w-full flex  items-center justify-between  text-lg font-sans font-semibold  px-8 '>
+<nav className='h-14 w-full flex  items-center justify-between  text-lg font-sans font-semibold  px-8 fixed bg-white '>
 
 <div className="logoname ">
 <h1>Pinnacle  Management</h1>
