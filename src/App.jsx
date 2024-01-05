@@ -8,8 +8,9 @@ import Create from "./components/Create.jsx"
 import Show from "./components/Show.jsx"
 import Details from "./components/Details.jsx"
 import Edit from "./components/Edit.jsx"
-import KajariyaCompany from "./components/KajariyaCompany.jsx"
+import CustomerReviews from "./components/CustomerReviews.jsx"
 import 'remixicon/fonts/remixicon.css'
+
 
 const App = () => {
   return (
@@ -25,8 +26,7 @@ const App = () => {
 <Route path="/Show" element={<Show/>}/>
 <Route path="/Show/Details/:title" element={<Details/>}/>
 <Route path="/Show/Edit/:title/" element={<Edit/>}/>
-<Route path="/ KajariyaCompany" element={< KajariyaCompany/>}/>
-
+<Route path="/CustomerReviews" element={<CustomerReviews/>}/>
 
 
 

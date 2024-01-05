@@ -1,12 +1,16 @@
 import React from 'react'
 import "./App.css"
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
-  const mycss = {
-    fontFamily: "PT Serif"
+  // const mycss = {
+  //   fontFamily: "PT Serif"
 
-  }
+  // }
+
+
+
   return (
    <>
    
@@ -33,7 +37,7 @@ const Home = () => {
 
 <h1 className='text-4xl mt-7 text-sky-900 fontfamily' >How We Tailor Data Management Solutions <br /> to Specific Industry Needs </h1>
 
-<p className='text-xl mt-7'>ScienceSoft has practical experience in 30+ domains, including healthcare, manufacturing, BFSI, retail <br /> & ecommerce, telecoms, transportation & logistics, and more.</p>
+<p className='text-xl mt-7'>Pinnacle Management has practical experience in 30+ domains, including healthcare, manufacturing, BFSI, retail <br /> & ecommerce, telecoms, transportation & logistics, and more.</p>
 
 <div className='h-3/5 w-auto  mt-5 flex items-center justify-between px-5 py-5 '>
 
@@ -103,7 +107,7 @@ Ensure that the support team is knowledgeable about the unique challenges faced 
 
 <h1 className='text-4xl mt-7 text-sky-900 fontfamily'>Data Quality Standards We Target </h1>
 
-<p className='text-xl mt-7'>When establishing data management for customers, <br /> ScienceSoft guarantees the following data quality characteristics:</p>
+<p className='text-xl mt-7'>When establishing data management for customers, <br /> Pinnacle Management guarantees the following data quality characteristics:</p>
 
 <div className="imgbox h-3/6 w-2/3  mt-5 bg-[url(https://estuary.dev/static/15d4b0bb8affc7db29e782ae10588b78/d6047/02_Data_Quality_Data_Quality_Dimensions_24ba5a39c7.png)] bg-center bg-cover bg-no-repeat rounded-full"></div>
 
@@ -175,6 +179,68 @@ Uniqueness </h2>
 
 
 </div>
+
+
+<div className="pg4 h-full w-full  px-12 border-t flex flex-col items-center justify-between">
+
+<h1 className='text-4xl mt-7 text-sky-900 fontfamily '>Pinnacle Management as a Reliable Data Management Partner</h1>
+
+
+
+<div className="customerReviewbox h-4/6 w-7/12 flex border-4 b border-double border-black ">
+
+<div className="left h-full w-2/5  px-10 py-14">
+
+<img src="https://plus.unsplash.com/premium_photo-1681489930334-b0d26fdb9ed8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGljcyUyMG9mJTIwcHJvZmVzc2lvbmFsJTIwd29tZW5zfGVufDB8fDB8fHww" alt=""  className='h-16 w-16 borde-2 border-solid border-black rounded-full object-cover object-top'/>
+
+<h1 className='text-xl font-bold'>Heather Owen Nigl</h1>
+<h3 className='text-base font-semibold text-sky-900  '>Chief Financial Officer <br /> Alta Resources</h3>
+
+
+</div>
+
+<div className="right h-full w-3/5  flex justify-center py-16 px-3 text-xl">
+
+<p><span className='text-2xl'>◈</span>We commissioned ScienceSoft to build a flexible database with user interfaces for uploading and exporting data to access and manage our test data stored as time-based CSV files. ScienceSoft's experts promptly reacted to new solution requirements that appeared during the project without stalling its progress.</p>
+
+
+</div>
+
+</div>
+
+
+
+  <Link to="/CustomerReviews"> <button className='h-12 w-72 bg-blue-200 mb-5 text-xl rounded bg-sky-900 text-white'>View all Customers Reviews</button></Link>
+
+
+</div>
+
+
+
+<div className="pg5 h-4/6 w-full bg-slate-100 flex">
+
+<div className="pg5-left h-full w-1/2 flex flex-col items-start justify-center px-10">
+<h1 className='text-4xl mt-7 text-sky-900 fontfamily'>Raise An Enquiry</h1>
+
+<p className='mt-5 text-xl'>Ensure assistance from the best leader that has years of experience in addressing business problems with automation and innovation</p>
+
+</div>
+
+<div className="pg5-right h-full w-1/2  px-10 ">
+
+  <input type="text" placeholder='Your Name' className='mt-32 border-b-2 border-black border-solid w-52 bg-inherit  text-xl placeholder:text-black ' />
+
+  <input type="email" placeholder='Your Email' className='mt-32 border-b-2 border-black border-solid w-52 bg-inherit  text-xl ml-8 placeholder:text-black'/> 
+
+  <input type="text" placeholder='Your Message' className='w-96 bg-inherit border-b-2 border-black border-solid text-xl mt-10 placeholder:text-black' /> <br />
+
+
+  <button className='mt-10 h-11 w-28 bg-sky-900 rounded text-xl text-white'>Submit</button>
+</div>
+
+
+</div>
+
 
 
 
