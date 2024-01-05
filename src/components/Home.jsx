@@ -210,7 +210,7 @@ Uniqueness </h2>
 
 
 
-  <Link to="/CustomerReviews"> <button className='h-12 w-72 bg-blue-200 mb-5 text-xl rounded bg-sky-900 text-white'>View all Customers Reviews</button></Link>
+  <Link to="/CustomerReviews"> <button className='h-12 w-72 bg-blue-200 mb-5 text-xl rounded bg-sky-900 text-white hover:bg-sky-700'>View all Customers Reviews</button></Link>
 
 
 </div>
@@ -235,7 +235,7 @@ Uniqueness </h2>
   <input type="text" placeholder='Your Message' className='w-96 bg-inherit border-b-2 border-black border-solid text-xl mt-10 placeholder:text-black' /> <br />
 
 
-  <button className='mt-10 h-11 w-28 bg-sky-900 rounded text-xl text-white'>Submit</button>
+  <button className='mt-10 h-11 w-28 bg-sky-900 rounded text-xl text-white hover:bg-sky-700'>Submit</button>
 </div>
 
 
