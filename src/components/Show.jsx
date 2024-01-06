@@ -16,31 +16,31 @@ const Show = () => {
     <div>
 
 <ul>
-  {allProducts.length >0
+  {allProducts.length > 0
   ? allProducts
   .map((p, index)=>{
    return(
-    <h4 key={index}>
-      {p.product}, {p.companyName}
+    <h4 key={index} >
 
-      <div className="links">
+ <li className='pt-20'>  {p.product} {p.companyName}</li>
 
-        <Link to={`/Show/Details/ ${p.number},
-        ${p.product},
-        ${p.size},
-        ${p.quantity},
-        ${p.stock},
-        ${p.companyName}`}>Details </Link>
+<Link to={`/Show/Details/${p.number}`}>Details
 
-      <span onClick={()=> deleteProducts(index) }>
-        <i className="ri-delete-bin-line" ></i>
-        </span>
 
-      <Link to={`/Show/Edit/${p.number}`}>
-        <i className="ri-file-edit-line"></i>
-        </Link>
-      </div>
+</Link>
+
+<span onClick={()=> deleteProducts(index) }>
+<i className="ri-delete-bin-line" ></i>
+</span>
+
+<Link to={`/Show/Edit/${p.number}`}>
+<i className="ri-file-edit-line"></i>
+</Link>
+
+
     </h4>
+
+    
    )
   })
 :"No Products are Available"}

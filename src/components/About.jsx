@@ -152,7 +152,7 @@ const About = () => {
 </div>
 
 
-<div className="team pg3 h-full w-full  border-t  bg-slate-100 px-10 ">
+<div className="team pg4 h-full w-full  border-t  bg-slate-100 px-10 ">
   <h1 className='text-4xl mt-5 text-sky-900 fontfamily'>Meet the  Pinnacle Management Team</h1>
 
 <div className="memberbox h-96 w-full -black mt-6 flex items-center justify-between px-4">

@@ -37,10 +37,10 @@ navigate("/Show")
   return (
 
     <>
-    <div className=' h-screen w-full bg-red-300'>
+    <div className=' h-screen w-full bg-red-300 pt-16'>
 
 
-        <form onSubmit={submithandler} >
+        <form onSubmit={submithandler} className='' >
 
 <input type="number" 
 onChange={(e)=> setnumber(e.target.value) } 
@@ -79,7 +79,6 @@ name="companyName"
 placeholder='Company' /> <br /> <br />
 
 <button>Submit</button>
-
 
 
 
