@@ -34,7 +34,7 @@ const Details = () => {
 
 
 
-<button onClick={ backhandler} className='h-10 w-24 text-xl rounded-md bg-sky-900 text-white font-bold'>Back</button>
+<button onClick={ backhandler} className='h-10 w-24 text-xl rounded-md bg-sky-900 text-white font-bold hover:bg-sky-700'>Back</button>
 
     </div>
   )

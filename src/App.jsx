@@ -16,9 +16,7 @@ const App = () => {
   return (
     <>
   <Nav/>
-  {/* <div className='pt-10'> */}
    
-
    <Routes>
 
 <Route path="/" element={<Home/>}/>
@@ -31,9 +29,8 @@ const App = () => {
 <Route path="/CustomerReviews" element={<CustomerReviews/>}/>
 
    </Routes>
-  {/* </div> */}
    
-    
+
    
     
     

@@ -2,11 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 const Nav = () => {
   return (
-<nav className='h-12 w-full flex  items-center justify-between  text-lg font-sans font-semibold  px-8 fixed  '>
+<nav className='h-12 w-full flex  items-center justify-between  text-lg font-sans font-semibold  px-6 fixed bg-white  '>
 
-<div className="logoname ">
-<h1>Pinnacle  Management</h1>
-
+<div className="logoname w-80  flex  items-center justify-evenly">
+<h1 className='text-2xl fontfamily'>Pinnacle  Management</h1>
+<img src="https://tourduvalat.org/wp-content/uploads/2017/11/results-icon-about.png" alt="" className='h-10 w-12' />
 </div>
 
 <ul >

@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from "./Footer.jsx"
 
 const About = () => {
   return (
@@ -260,7 +261,7 @@ const About = () => {
 
 
 
-
+<Footer/>
 
 {/* maindivend */}
     </div>

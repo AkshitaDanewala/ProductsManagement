@@ -1,5 +1,7 @@
 import React from 'react'
 import "./App.css"
+import Footer from "./Footer.jsx"
+
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -18,17 +20,19 @@ const Home = () => {
   <div className="maindiv h-screen w-full bg-green-300">
 
 
-  <div style={{backgroundImage:"url(https://www.techrepublic.com/wp-content/uploads/2022/10/tr-saas-software-as-a-service-what.jpeg)",height: "100vh" ,width: "100%", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat:"no-repeat", display: "flex", justifyContent: "end"}}>
+  
 
-<div className="content h-full w-2/5  flex flex-col items-center justify-center ">
+<div className="pg1 h-full  w-full bg-[url(https://www.techrepublic.com/wp-content/uploads/2022/10/tr-saas-software-as-a-service-what.jpeg)] bg-cover bg-center bg-norepeat flex justify-end">
+
+  <div className="content h-full w-2/5  flex flex-col items-center justify-center">
 
   <h4  className='h-32 w-full  text-4xl text-center font-semibold leading-10'>Manage Your Data With Pinnacle Management System... </h4>
-
 
   <p className='h-36 w-full  text-base px-4 py-4 mt-2 text-center text-white'> These days, you can get data about any aspect of your business, ranging from market conditions to consumer values. But without the right tools, this collection of data can seem overwhelming. Data management systems will help you make sense of your data and draw meaning from your insights. </p>
 
   <button className='h-10 w-32 border-2 border-solid border-black text-base font-bold rounded mt-4 hover:border-white hover:text-white'>Explore More</button>
-</div>
+
+  </div>
 
 </div>
 
@@ -246,9 +250,10 @@ Uniqueness </h2>
 
 
     {/* main */}
+    <Footer/>
   </div>
    
-   
+  
 
  
 

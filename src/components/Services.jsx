@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from "./Footer.jsx"
 
 const Services = () => {
   return (
@@ -205,7 +206,7 @@ const Services = () => {
        
 
 
-
+<Footer/>
       {/* maindivend */}
     </div>
     

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { ProductContext } from '../utils/Context'
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify'
 const Show = () => {
 
   const [allProducts, setallProducts] = useContext(ProductContext)
@@ -11,12 +12,13 @@ const Show = () => {
     deleteproductsData.splice(index, 1)
     setallProducts(deleteproductsData)
     localStorage.setItem("Productslist", JSON.stringify(deleteproductsData))
+    toast.dark("Products Successfully Deleted")
   }
   return (
 
     <div className="maindiv h-screen w-full">
 
-<div className='h-full w-full bg-slate-100 borderr-t '>
+<div className='h-full w-full bg-slate-100 borderr-t px-5 '>
 
 
 
@@ -26,7 +28,7 @@ const Show = () => {
   .map((p, index)=>{
    return(
   
-    <h4 key={index} className='h-10 w-full border-black border-b  mt-5  flex items-center justify-between px-10 overflow-y-auto'>
+    <h4 key={index} className='h-10 w-full border-black border-b  mt-5  flex items-center justify-between px-3 overflow-y-auto'>
 
  <li className='flex items-center'><span className='text-xl font-semibold'>Product Name:</span> <h3 className='ml-3 text-xl '>{p.product}</h3> 
  <span className='text-xl font-semibold ml-28'>Company Name:</span> <h3 className='ml-3 text-xl'>{p.companyName}</h3> </li>
@@ -53,7 +55,7 @@ const Show = () => {
     
    )
   })
-:"No Products are Available"}
+:<h2 className='text-xl  '>No Products are Available</h2>}
 </ul>
 
 

@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { ProductContext } from '../utils/Context'
 import { useNavigate, useParams } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 const Edit = () => {
 const [allProducts, setallProducts] = useContext(ProductContext)
@@ -35,6 +36,7 @@ const Copyproducts = [...allProducts]
 Copyproducts[ productsIndex] = productsData
 setallProducts(Copyproducts )
 localStorage.setItem("Productslist", JSON.stringify(Copyproducts ))
+toast.dark("Products Successfully Edited")
 
 navigate("/Show")
 };
@@ -101,7 +103,7 @@ name="companyName"
 placeholder='Company' /> 
 
 
-<button className='h-12 w-24 mt-5 bg-sky-900 text-white font-bold rounded-md'>Submit</button>
+<button className='h-12 w-24 mt-5 bg-sky-900 text-white font-bold rounded-md hover:bg-sky-700'>Submit</button>
 
 
 

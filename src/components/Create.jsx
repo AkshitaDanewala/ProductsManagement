@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { ProductContext } from '../utils/Context'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 const Create = () => {
 const [allProducts, setallProducts] = useContext(ProductContext)
@@ -21,6 +22,7 @@ const Copyproducts = [...allProducts]
 Copyproducts.push(productsData)
 setallProducts(Copyproducts )
 localStorage.setItem("Productslist", JSON.stringify(Copyproducts ))
+toast.dark("Products successfully Added")
 
 setnumber("")
 setproduct("")
@@ -92,7 +94,7 @@ value={companyName}
 name="companyName" 
 placeholder='Company Name:' /> 
 
-<button className='h-10 w-24 bg-sky-900 text-white rounded mt-5'>Submit</button>
+<button className='h-10 w-24 bg-sky-900 text-white rounded mt-5 hover:bg-sky-700'>Submit</button>
 
 
 
