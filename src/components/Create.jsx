@@ -37,52 +37,75 @@ navigate("/Show")
   return (
 
     <>
-    <div className=' h-screen w-full bg-red-300 pt-16'>
+    <div className=' h-screen w-full  pt-16'>
+
+<h1 className='text-4xl mt-3 text-sky-900 fontfamily text-center'>ADD YOUR PRODUCTS..</h1>
+
+<div className="formbox h-5/6 w-full  flex mt-4">
+
+  <div className="formbox-left h-full w-1/2 bg-yellow-300 bg-[url(https://img.freepik.com/premium-vector/woman-filling-form_118813-1017.jpg)] bg-cover bg-center"></div>
+
+  <div className="formbox-right h-full w-1/2 ">
 
 
-        <form onSubmit={submithandler} className='' >
+  <form onSubmit={submithandler} className='flex flex-col justify-center items-center py-1' >
 
-<input type="number" 
+<input  type="number"  
+className='h-10 w-96 px-2 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold'
 onChange={(e)=> setnumber(e.target.value) } 
 value={number}
 name="number" 
-placeholder='S.No' /> <br /> <br />
+placeholder='S.No:'/>
 
-<input  type="text"
+<input  type="text" 
+className='mt-5 h-10 w-96 px-2 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold'
 onChange={(e)=> setproduct(e.target.value) } 
 value={product}
 name="product" 
-placeholder='ProductName' /> <br /> <br />
+placeholder='Product Name:' /> 
 
 <input type="text" 
+className='h-10 w-96 px-2 mt-5 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold'
 onChange={(e)=> setsize(e.target.value) }
 value={size}
 name="size" 
-placeholder='Size'/> <br /> <br />
+placeholder='Size:'/> 
 
-<input type="text"
+<input type="text" 
+className='h-10 w-96 px-2 mt-5 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold'
 onChange={(e)=> setquantity(e.target.value) } 
 value={quantity}
 name="quantity" 
-placeholder='Quantity' /> <br /> <br /> 
+placeholder='Quantity:' /> 
 
-<input type="text" 
+<input type="text"  
+className='h-10 w-96 px-2 mt-5 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold'
 onChange={(e)=> setstock(e.target.value) }
 value={stock}
 name="stock" 
-placeholder='Stock'/> <br /> <br />
+placeholder='Stock:'/> 
 
-<input type="text" 
+<input type="text"  
+className='h-10 w-96 px-2 mt-5 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold'
 onChange={(e)=> setcompanyName(e.target.value) }
 value={companyName}
 name="companyName" 
-placeholder='Company' /> <br /> <br />
+placeholder='Company Name:' /> 
 
-<button>Submit</button>
+<button className='h-10 w-24 bg-sky-900 text-white rounded mt-5'>Submit</button>
 
 
 
         </form>
+
+
+  </div>
+
+
+
+  {/* formboxend */}
+</div>
+
 
 
     </div>
