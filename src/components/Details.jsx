@@ -12,26 +12,29 @@ const Details = () => {
         navigate(-1)
     }
   return (
-    <div>
+    <div className='h-screen w-full bg-slate-100 flex flex-col items-center justify-around'>
 
-{/* <h3>{title}</h3> */}
+<h1 className='pt-20  text-4xl  text-sky-900 fontfamily text-center'>Product Details</h1>
 
-<div className="listbox pt-20">
-<h3>Number: {allProducts[productList].number}</h3>
-<h3>Product: {allProducts[productList].product}</h3>
-<h3>Size: {allProducts[productList].size}</h3>
-<h3>Quantity: {allProducts[productList].quantity}</h3>
-<h3>Stock: {allProducts[productList].stock}</h3>
-<h3>CompanyName: {allProducts[productList].companyName}</h3>
+<div className="listbox h-52 w-96 shadow-lg px-5 py-3">
+
+<span className='text-xl font-semibold text-sky-900'>S.NO:</span> <span className='text-xl font-semibold ml-3'> {allProducts[productList].number}</span> <br />
+
+ <span className='text-xl font-semibold text-sky-900'>Product: </span>  <span className='text-xl font-semibold ml-3'> {allProducts[productList].product}</span> <br />
+
+<span className='text-xl font-semibold text-sky-900'>Size:</span> <span  className='text-xl font-semibold ml-3'> {allProducts[productList].size}</span> <br />
+
+ <span className='text-xl font-semibold text-sky-900'>Quantity:</span> <span className='text-xl font-semibold ml-3'> {allProducts[productList].quantity}</span> <br />
+
+ <span className='text-xl font-semibold text-sky-900'>Stock:</span>  <span  className='text-xl font-semibold ml-3'> {allProducts[productList].stock}</span> <br />
+
+ <span className='text-xl font-semibold text-sky-900'>CompanyName:</span>  <span className='text-xl font-semibold ml-3'> {allProducts[productList].companyName}</span> <br />
 
 </div>
 
 
 
-
-
-
-<button onClick={ backhandler}>Back</button>
+<button onClick={ backhandler} className='h-10 w-24 text-xl rounded-md bg-sky-900 text-white font-bold'>Back</button>
 
     </div>
   )

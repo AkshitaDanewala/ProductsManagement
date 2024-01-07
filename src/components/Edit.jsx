@@ -43,55 +43,80 @@ navigate("/Show")
   return (
 
     <>
-    <div>
-        <form onSubmit={submithandler} >
+    <div className=' maindiv h-screen w-full'>
 
-        <input  type="number"
+
+<div className="formbox h-full w-full bg-slate-100 flex flex-col items-center justify-center ">
+
+<h1 className='text-4xl mt-4 text-sky-900 fontfamily text-center'>Edit Your Products..</h1>
+
+<form onSubmit={submithandler}  className='h-96 w-3/6 flex flex-col items-center py-4 mt-5'>
+
+<input  type="number"
+ className='h-10 w-96 px-2 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold outline-0 '
 onChange={editHandler } 
 value={editProductsData.number}
 name="number" 
-placeholder='S.No' /> <br /> <br />  
+placeholder='S.No' />  
 
 
 
-<input  type="text"
+<input  type="text" 
+className='h-10 w-96 px-2 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold outline-0 mt-3'
 onChange={editHandler } 
 value={editProductsData.product}
 name="product" 
-placeholder='Product' /> <br /> <br />
+placeholder='Product' /> 
+
 
 <input type="text" 
+className='h-10 w-96 px-2 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold outline-0 mt-3'
 onChange={editHandler }
 value={ editProductsData.size}
 name="size" 
-placeholder='Size'/> <br /> <br />
+placeholder='Size'/> 
+
 
 <input type="text"
+className='h-10 w-96 px-2 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold outline-0 mt-3'
 onChange={ editHandler} 
 value={editProductsData.quantity}
 name="quantity" 
-placeholder='Quantity' /> <br /> <br /> 
+placeholder='Quantity' /> 
 
-<input type="text" 
+
+<input type="text"
+className='h-10 w-96 px-2 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold outline-0 mt-3' 
 onChange={ editHandler }
 value={editProductsData.stock}
 name="stock" 
-placeholder='Stock'/> <br /> <br />
+placeholder='Stock'/> 
+
 
 <input type="text" 
+className='h-10 w-96 px-2 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold outline-0 mt-3'
 onChange={editHandler}
 value={editProductsData.companyName}
 name="companyName" 
-placeholder='Company' /> <br /> <br />
-
-<button>Submit</button>
+placeholder='Company' /> 
 
 
+<button className='h-12 w-24 mt-5 bg-sky-900 text-white font-bold rounded-md'>Submit</button>
 
 
-        </form>
 
 
+</form>
+
+</div>
+       
+
+
+
+
+
+
+{/* maindivend */}
     </div>
     
     

@@ -15,9 +15,11 @@ import 'remixicon/fonts/remixicon.css'
 const App = () => {
   return (
     <>
-  
-    <Nav/>
-    <Routes>
+  <Nav/>
+  {/* <div className='pt-10'> */}
+   
+
+   <Routes>
 
 <Route path="/" element={<Home/>}/>
 <Route path="/About" element={<About/>}/>
@@ -28,13 +30,11 @@ const App = () => {
 <Route path="/Show/Edit/:title/" element={<Edit/>}/>
 <Route path="/CustomerReviews" element={<CustomerReviews/>}/>
 
-
-
-
-
-
-
-    </Routes>
+   </Routes>
+  {/* </div> */}
+   
+    
+   
     
     
     
