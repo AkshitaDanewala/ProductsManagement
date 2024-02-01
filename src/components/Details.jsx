@@ -22,7 +22,7 @@ const Details = () => {
 
  <span className='text-xl font-semibold text-sky-900'>Product: </span>  <span className='text-xl font-semibold ml-3'> {allProducts[productList].product}</span> <br />
 
-<span className='text-xl font-semibold text-sky-900'>Size:</span> <span  className='text-xl font-semibold ml-3'> {allProducts[productList].size}</span> <br />
+<span className='text-xl font-semibold text-sky-900'>Rate:</span> <span  className='text-xl font-semibold ml-3'> {allProducts[productList].size}</span> <br />
 
  <span className='text-xl font-semibold text-sky-900'>Quantity:</span> <span className='text-xl font-semibold ml-3'> {allProducts[productList].quantity}</span> <br />
 

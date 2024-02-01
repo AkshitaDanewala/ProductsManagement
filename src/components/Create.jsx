@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { ProductContext } from '../utils/Context'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import Footer from "./Footer"
 
 const Create = () => {
 const [allProducts, setallProducts] = useContext(ProductContext)
@@ -39,9 +40,9 @@ navigate("/Show")
   return (
 
     <>
-    <div className=' h-screen w-full   pt-5'>
+    <div className=' h-screen w-full   pt-10'>
 
-<h1 className='text-4xl pt-8 text-sky-900 fontfamily text-center'>ADD YOUR PRODUCTS..</h1>
+<h1 className='text-[2.5vmax] pt-8 text-sky-900 fontfamily text-center'>ADD YOUR PRODUCTS..</h1>
 
 <div className="formbox h-5/6 w-full flex mt-4 ">
 
@@ -71,7 +72,7 @@ className='h-10 w-96 px-2 mt-5 border-b-2 border-black  bg-inherit placeholder:t
 onChange={(e)=> setsize(e.target.value) }
 value={size}
 name="size" 
-placeholder='Size:'/> 
+placeholder='Rate:'/> 
 
 <input type="text" 
 className='h-10 w-96 px-2 mt-5 border-b-2 border-black  bg-inherit placeholder:text-black font-semibold outline-0'
@@ -109,9 +110,14 @@ placeholder='Company Name:' />
 </div>
 
 
+<div className='mt-24'>
+
+<Footer/>
+</div>
 
     </div>
     
+
     
     
     

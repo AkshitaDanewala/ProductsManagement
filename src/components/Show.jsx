@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import { ProductContext } from '../utils/Context'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import Footer from './Footer'
+
 const Show = () => {
 
   const [allProducts, setallProducts] = useContext(ProductContext)
@@ -30,8 +32,11 @@ const Show = () => {
   
     <h4 key={index} className='h-10 w-full border-black border-b  mt-5  flex items-center justify-between px-3 overflow-y-auto'>
 
- <li className='flex items-center'><span className='text-xl font-semibold'>Product Name:</span> <h3 className='ml-3 text-xl '>{p.product}</h3> 
- <span className='text-xl font-semibold ml-28'>Company Name:</span> <h3 className='ml-3 text-xl'>{p.companyName}</h3> </li>
+ <li className='flex items-center'>
+ <span className='text-[1.3vmax] font-semibold'>S.NO:</span> <h3 className='ml-3 text-[1.3vmax]'>{p.number}</h3> 
+  <span className='text-[1.3vmax] font-semibold ml-24'>Product Name:</span> <h3 className='ml-3 text-[1.3vmax] '>{p.product}</h3> 
+ <span className='text-[1.3vmax] font-semibold ml-28'>Company Name:</span> <h3 className='ml-3 text-[1.3vmax]'>{p.companyName}</h3> 
+ </li>
 
 
 <div className="links w-36 flex justify-evenly">
@@ -64,6 +69,10 @@ const Show = () => {
 
 
       {/* maindivend */}
+
+<Footer/>
+
+
     </div>
 
 

@@ -76,7 +76,7 @@ className='h-10 w-96 px-2 border-b-2 border-black  bg-inherit placeholder:text-b
 onChange={editHandler }
 value={ editProductsData.size}
 name="size" 
-placeholder='Size'/> 
+placeholder='Rate'/> 
 
 
 <input type="text"
